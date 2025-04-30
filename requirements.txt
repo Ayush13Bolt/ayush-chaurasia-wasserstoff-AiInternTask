@@ -1,7 +1,7 @@
 fastapi
-uvicorn
 httpx
-sqlalchemy
+uvicorn[standard]
+SQLAlchemy[asyncpg]
 psycopg2-binary
 aioredis
 redis
