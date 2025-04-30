@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Beats Rock? 🎮</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>What Beats Rock? 🎮</h1>
+        <div id="feedback" class="feedback">Think of something that beats a rock.</div>
+        <div class="input-area">
+            <input type="text" id="guessInput" placeholder="Enter your guess">
+            <button id="submitGuess">Submit</button>
+        </div>
+
+        <div class="game-info">
+            <div id="score" class="info-item">Score: 0</div>
+            <div id="globalGuessCount" class="info-item">Zero Rounds Played.</div>
+        </div>
+
+        <div class="guesses-history">
+            <h2>Last Five Guesses</h2>
+            <ul id="lastFiveGuesses"></ul>
+            <button id="requestHistory">Show Full History</button>
+            <ul id="fullHistory" style="display:none;"></ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

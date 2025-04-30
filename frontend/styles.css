@@ -1,0 +1,129 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.feedback {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #27ae60; /* Default correct color */
+}
+
+.feedback.correct {
+  color: #27ae60;
+}
+
+.feedback.game-over {
+  color: #c0392b;
+}
+
+.input-area {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+#guessInput {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+}
+
+#submitGuess {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#submitGuess:hover {
+  background-color: #0056b3;
+}
+
+.game-info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.info-item {
+  padding: 8px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.guesses-history h2 {
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#lastFiveGuesses {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#lastFiveGuesses li {
+  display: inline;
+  margin-right: 10px;
+  color: #555;
+}
+
+#lastFiveGuesses li:last-child {
+  margin-right: 0;
+}
+
+#requestHistory {
+  display: block;
+  width: 200px;
+  margin: 10px auto;
+  padding: 10px 15px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+#requestHistory:hover {
+  background-color: #5a6268;
+}
+
+#fullHistory {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#fullHistory li {
+  margin: 5px 0;
+  color: #777;
+}

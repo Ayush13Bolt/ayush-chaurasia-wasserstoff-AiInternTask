@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+httpx
+sqlalchemy
+psycopg2-binary
+aioredis
+redis
+tenacity>=8.2.3
+asyncpg
+databases
+google-generativeai
