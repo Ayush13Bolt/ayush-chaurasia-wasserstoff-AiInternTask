@@ -44,7 +44,7 @@ async def process_guess(app: FastAPI, user_id: str, guess: str, persona: str, us
             global_count = await get_global_guess_count(db, guess_lower)
             return JSONResponse(content={  # Changed to JSONResponse
                 "game_over": True,
-                "message": f"GAME OVER! ❌! You have already used the word '{guess}' before. {verdict.lower()}",
+                "message": f"GAME OVER! ❌! You have already used the word '{guess}' before.",
                 "verdict": "NO",
                 "global_guess_count": global_count
             })
