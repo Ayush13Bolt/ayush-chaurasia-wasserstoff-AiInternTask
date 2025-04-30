@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             } catch (error) {
                 // Catch network or profanity-related errors
-                feedback.textContent = 'Use of Profane words is not allowed! Try again.';
+                feedback.textContent = 'Use of Profane words is not allowed! Try again..';
             }
 
             // Clear input and hide full history after submission

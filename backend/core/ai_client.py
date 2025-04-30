@@ -32,7 +32,7 @@ model = initialize_ai_client()
 )
 def ask_ai(word, guess, persona):
     # Construct the prompt with selected persona
-    prompt = f"Does the word '{guess}' beat the word '{word}' logically, creatively, or realistically. Answer should be based on general knowledge or plausible reasoning, starting with 'YES' or 'NO' followed by a very short one line reasoning"
+    prompt = f"Does the word '{guess}' beat the word '{word}' logically, creatively, or realistically. Answer should be based on general knowledge and reasoning. Response should start with 'YES' or 'NO', followed by a very short one line justification."
     contents = [
         {
             "role": "user",

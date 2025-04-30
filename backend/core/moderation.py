@@ -4,9 +4,11 @@ from typing import List
 # Using a  list
 BAD_WORDS: List[str] = [
     r"\b(damn|hell|crap)\b",  # r"\b" for word boundary
-    r"ass\w+",
-    r"fuck\w+",  
-    r"shit\w+",  # Match words starting with "shit"
+    r"\b(ass(es)?)\b",       
+    r"fuck\w*",
+    r"sex\w*", 
+    r"arse\w*",            
+    r"shit\w*",          # Match words starting with "shit"
     # Add more patterns as needed
 ]
 

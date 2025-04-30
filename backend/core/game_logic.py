@@ -44,7 +44,7 @@ async def process_guess(app: FastAPI, user_id: str, guess: str, persona: str, us
             global_count = await get_global_guess_count(db, guess_lower)
             return JSONResponse(content={  # Changed to JSONResponse
                 "game_over": True,
-                "message": f"GAME OVER! ❌! You have already used the word '{guess}' before.",
+                "message": f"GAME OVER! ❌! You have already used the word '{guess}' before. You have to start over again! So, WHAT BEATS ROCK?",
                 "verdict": "NO",
                 "global_guess_count": global_count
             })
@@ -79,7 +79,7 @@ async def process_guess(app: FastAPI, user_id: str, guess: str, persona: str, us
             return JSONResponse(content={  # Changed to JSONResponse
                 "game_over": True,
                 "verdict": "NO",
-                "message": f"GAME OVER! ❌! “{guess}” does not beat “{word_to_beat}”. {verdict.lower()}",
+                "message": f"GAME OVER! ❌! “{guess}” does not beat “{word_to_beat}”. {verdict.lower()} You have to start over again! So, WHAT BEATS ROCK?",
                 "global_guess_count": global_count
             })
 
